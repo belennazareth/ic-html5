@@ -5,6 +5,7 @@ pipeline {
     agent {
         docker { image 'josedom24/debian-npm'
         args '-u root:root'
+        network 'host'
         }
     }
     stages {
